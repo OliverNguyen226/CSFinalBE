@@ -57,6 +57,7 @@ namespace CSFinal.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPainting(int id, Painting painting)
         {
+            Console.WriteLine("A painting has been edited");
             if (id != painting.Id)
             {
                 return BadRequest();
@@ -89,6 +90,7 @@ namespace CSFinal.Controllers
         [HttpPost]
         public async Task<ActionResult<Painting>> PostPainting(Painting painting)
         {
+            Console.WriteLine("A painting has been created");
             if (_context.Paintings == null)
             {
                 return Problem("Entity set 'DatabaseContext.Paintings'  is null.");

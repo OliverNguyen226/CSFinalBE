@@ -22,6 +22,7 @@ builder.Services.AddDbContext<DatabaseContext>(
       }
     }
 );
+
 var app = builder.Build();
 
 app.MapControllers();

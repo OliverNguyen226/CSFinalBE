@@ -6,6 +6,6 @@ public class Painting
     public string Name { get; set; }
     public string Pixels { get; set; }
     public int UserId { get; set; }
-    public User User { get; set; }
+    public User? User { get; set; }
     public DateTime CreatedAt { get; set; }
 }
